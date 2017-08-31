@@ -1,0 +1,26 @@
+userId = <span id="currentUser"></span><br/>
+siteAbsoluteUrl = <span id="siteAbsoluteUrl"></span><br/>
+siteServerRelativeUrl = <span id="siteServerRelativeUrl"></span><br/>
+webAbsoluteUrl = <span id="webAbsoluteUrl"></span><br/>
+webServerRelativeUrl = <span id="webServerRelativeUrl"></span><br/>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+	let currentUser = _spPageContextInfo.userId;
+	let siteAbsoluteUrl = _spPageContextInfo.siteAbsoluteUrl;
+	let siteServerRelativeUrl = _spPageContextInfo.siteServerRelativeUrl;
+	let webAbsoluteUrl = _spPageContextInfo.webAbsoluteUrl;
+	let webServerRelativeUrl = _spPageContextInfo.webServerRelativeUrl;
+
+	console.log("currentUser = " + currentUser);
+	console.log("siteAbsoluteUrl = " + siteAbsoluteUrl);
+	console.log("siteServerRelativeUrl = " + siteServerRelativeUrl);
+	console.log("webAbsoluteUrl = " + webAbsoluteUrl);
+	console.log("webServerRelativeUrl = " + webServerRelativeUrl);
+
+	$("#currentUser").text(currentUser);
+	$("#siteAbsoluteUrl").text(siteAbsoluteUrl);
+	$("#siteServerRelativeUrl").text(siteServerRelativeUrl);
+	$("#webAbsoluteUrl").text(webAbsoluteUrl);
+	$("#webServerRelativeUrl").text(webServerRelativeUrl);
+</script>

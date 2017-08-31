@@ -1,0 +1,6 @@
+<h1>HTML H1 Tag</h1>
+<h2 style="color: green;font-family: Times New Roman">Green if CSS Works</h1>
+<h3>Red if jQuery Loaded</h3>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>$("h3").css("color", "red");</script>
